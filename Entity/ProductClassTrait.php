@@ -28,7 +28,7 @@
          *
          * @return Order
          */
-        public function setSubscriptionPeriod(\Plugin\UnivaPay\Entity\SubscriptionPeriod $subscriptionPeriod = null)
+        public function setSubscriptionPeriod(?\Plugin\UnivaPay\Entity\SubscriptionPeriod $subscriptionPeriod = null)
         {
             $this->SubscriptionPeriod = $subscriptionPeriod;
 
