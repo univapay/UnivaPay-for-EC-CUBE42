@@ -5,9 +5,9 @@ use Eccube\Controller\AbstractController;
 use Eccube\Service\Composer\ComposerServiceInterface;
 use Plugin\UnivaPay\Form\Type\Admin\ConfigType;
 use Plugin\UnivaPay\Repository\ConfigRepository;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
 
 class ConfigController extends AbstractController
 {

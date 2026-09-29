@@ -5,7 +5,7 @@ use Eccube\Entity\Payment;
 use Eccube\Plugin\AbstractPluginManager;
 use Plugin\UnivaPay\Entity\Config;
 use Plugin\UnivaPay\Entity\SubscriptionPeriod;
-use Symfony\Component\DependencyInjection\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class PluginManager extends AbstractPluginManager
 {
