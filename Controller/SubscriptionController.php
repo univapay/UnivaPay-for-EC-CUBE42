@@ -15,10 +15,10 @@ use Eccube\Service\PurchaseFlow\PurchaseFlow;
 use Plugin\UnivaPay\Repository\ConfigRepository;
 use Plugin\UnivaPay\Util\SDK;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
+use Symfony\Component\Routing\Annotation\Route;
 
 class SubscriptionController extends AbstractController
 {
@@ -42,6 +42,16 @@ class SubscriptionController extends AbstractController
      * @var OrderHelper
      */
     private $orderHelper;
+
+    /**
+     * @var OrderNoProcessor
+     */
+    private $orderNoProcessor;
+
+    /**
+     * @var AddPointProcessor
+     */
+    private $addPointProcessor;
 
     /**
      * @var MailService
